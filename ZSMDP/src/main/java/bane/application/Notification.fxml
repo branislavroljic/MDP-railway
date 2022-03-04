@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="268.0" prefWidth="326.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1">
+   <children>
+      <VBox prefHeight="268.0" prefWidth="326.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextArea fx:id="notificationText" prefHeight="398.0" prefWidth="326.0" promptText="Tekst obavjestenja..." />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="127.0" layoutY="9.0" mnemonicParsing="false" onAction="#onSendListener" text="POSALJI" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

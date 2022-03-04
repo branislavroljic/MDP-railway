@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="stationIDText" layoutX="104.0" layoutY="37.0" prefHeight="25.0" prefWidth="166.0" />
+      <Text layoutX="29.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID stanice" />
+      <Text layoutX="29.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naziv" />
+      <Button layoutX="104.0" layoutY="144.0" mnemonicParsing="false" onAction="#onAddStationListener" prefHeight="25.0" prefWidth="166.0" text="DODAJ" />
+      <TextField fx:id="stationNameText" layoutX="104.0" layoutY="77.0" prefHeight="25.0" prefWidth="166.0" />
+   </children>
+</AnchorPane>

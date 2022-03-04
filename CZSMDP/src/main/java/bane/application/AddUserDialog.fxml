@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="218.0" minWidth="400.0" prefHeight="218.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="131.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dodavanje korisnika" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minWidth="100.0" text="username" />
+                  <TextField fx:id="usernameText" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minWidth="100.0" text="password" />
+                  <TextField fx:id="passwordText" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minWidth="100.0" prefHeight="17.0" prefWidth="102.0" text="stanica" />
+                  <ComboBox fx:id="stationsComboBox" prefHeight="25.0" prefWidth="247.0" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#OnAddUserListener" text="DODAJ" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

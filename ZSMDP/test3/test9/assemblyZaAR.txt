@@ -1,0 +1,21 @@
+
+
+MOV r1, 8
+
+MOV [777], 21
+
+ADD r1, [777]
+
+labela:
+WRITE r1
+
+MOV R3, 777
+
+WRITE R3
+WRITE [R3]
+
+READ R4
+SUB R4, 2
+WRITE r4
+JZ labela  
+

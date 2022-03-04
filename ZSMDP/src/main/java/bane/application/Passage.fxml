@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="150.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-7.0" prefHeight="148.0" prefWidth="350.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="66.0" prefWidth="350.0">
+               <children>
+                  <Text layoutX="71.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LINIJA " wrappingWidth="68.13671875" />
+                  <ComboBox fx:id="timetableComboBox" layoutX="175.0" layoutY="28.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="65.0" prefWidth="350.0">
+               <children>
+                  <Text layoutX="50.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VRIJEME (HH:mm))" />
+                  <TextField fx:id="passageTimeText" layoutX="175.0" layoutY="28.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="markPassageButton" layoutX="126.0" layoutY="124.0" mnemonicParsing="false" onAction="#markPassageOnClickListener" text="EVIDENTIRAJ" />
+   </children>
+</AnchorPane>
